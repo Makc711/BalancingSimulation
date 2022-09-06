@@ -1,0 +1,115 @@
+Мультиязычный интерфейс WindowsForms / Смена языка
+https://www.youtube.com/watch?v=08mf72wUOwo
+
+
+		// Сохранение таблиц языков в файлы ресурсов
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            appData.WriteXml($"{Application.StartupPath}/data.xml");
+            ResourceWriter ren = new ResourceWriter(Application.StartupPath + "/resource.en-US.resources");
+            ResourceWriter rru = new ResourceWriter(Application.StartupPath + "/resource.ru-RU.resources");
+            ResourceWriter rde = new ResourceWriter(Application.StartupPath + "/resource.de-DE.resources");
+            foreach (AppData.LanguagesRow row in appData.Languages.Rows)
+            {
+                ren.AddResource(row.ID, row.English);
+                rru.AddResource(row.ID, row.Russian);
+                rde.AddResource(row.ID, row.German);
+            }
+            ren.Generate();
+            ren.Close();
+            rru.Generate();
+            rru.Close();
+            rde.Generate();
+            rde.Close();
+            MessageBox.Show("Successfully saved.", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+		
+		// Для установки языка
+		private void Form1_Load(object sender, EventArgs e)
+		{
+            appData.ReadXml($"{Application.StartupPath}/Resources/data.xml");
+			LoadCulture();
+        }
+		
+        private void LoadCulture(string nameOfCulture = "en-US")
+        {
+            var cultureInfo = new CultureInfo(nameOfCulture);
+            Thread.CurrentThread.CurrentCulture = cultureInfo;
+            Thread.CurrentThread.CurrentUICulture = cultureInfo;
+            ResourceManager resourceManager = ResourceManager.CreateFileBasedResourceManager("resource", $"{Application.StartupPath}/Resources/", null);
+            if (resourceManager.GetString("001") != null) groupBoxCellState.Text = resourceManager.GetString("001");
+            if (resourceManager.GetString("002") != null) groupBoxBalancingAlgorithm.Text = resourceManager.GetString("002");
+            if (resourceManager.GetString("003") != null) label3.Text = resourceManager.GetString("003");
+            if (resourceManager.GetString("004") != null) label5.Text = resourceManager.GetString("004");
+            if (resourceManager.GetString("005") != null) myLabel3.Text = resourceManager.GetString("005");
+            if (resourceManager.GetString("006") != null) myLabel9.Text = resourceManager.GetString("006");
+            if (resourceManager.GetString("007") != null) myLabel10.Text = resourceManager.GetString("007");
+            if (resourceManager.GetString("008") != null) label12.Text = resourceManager.GetString("008");
+            if (resourceManager.GetString("009") != null) myLabel12.Text = resourceManager.GetString("009");
+            if (resourceManager.GetString("010") != null) myLabel11.Text = resourceManager.GetString("010");
+            if (resourceManager.GetString("011") != null) groupBox2.Text = resourceManager.GetString("011");
+            if (resourceManager.GetString("012") != null) myLabel5.Text = resourceManager.GetString("012");
+            if (resourceManager.GetString("013") != null) myLabel6.Text = resourceManager.GetString("013");
+            if (resourceManager.GetString("014") != null) myLabel7.Text = resourceManager.GetString("014");
+            if (resourceManager.GetString("015") != null) myLabel8.Text = resourceManager.GetString("015");
+            if (resourceManager.GetString("016") != null) myLabel14.Text = resourceManager.GetString("016");
+            if (resourceManager.GetString("017") != null) myLabel13.Text = resourceManager.GetString("017");
+            if (resourceManager.GetString("018") != null) groupBox3.Text = resourceManager.GetString("018");
+            if (resourceManager.GetString("019") != null) label16.Text = resourceManager.GetString("019");
+            if (resourceManager.GetString("020") != null) label17.Text = resourceManager.GetString("020");
+            if (resourceManager.GetString("021") != null) label9.Text = resourceManager.GetString("021");
+            if (resourceManager.GetString("022") != null) label4.Text = resourceManager.GetString("022");
+            if (resourceManager.GetString("023") != null) label18.Text = resourceManager.GetString("023");
+            if (resourceManager.GetString("024") != null) groupBox4.Text = resourceManager.GetString("024");
+            if (resourceManager.GetString("025") != null) groupBox1.Text = resourceManager.GetString("025");
+            if (resourceManager.GetString("026") != null) label1.Text = resourceManager.GetString("026");
+            if (resourceManager.GetString("027") != null) buttonClear.Text = resourceManager.GetString("027");
+            if (resourceManager.GetString("028") != null) label10.Text = resourceManager.GetString("028");
+            if (resourceManager.GetString("029") != null) label2.Text = resourceManager.GetString("029");
+            if (resourceManager.GetString("030") != null) label6.Text = resourceManager.GetString("030");
+        }
+		
+		
+НО Я ИСПОЛЬЗУЮ:
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			LoadCulture();
+        }
+
+		private void LoadCulture(string nameOfCulture = "en-US")
+        {
+            var cultureInfo = new CultureInfo(nameOfCulture);
+            Thread.CurrentThread.CurrentCulture = cultureInfo;
+            Thread.CurrentThread.CurrentUICulture = cultureInfo;
+            ResourceManager resourceManager = ResourceManager.CreateFileBasedResourceManager("resource", $"{Application.StartupPath}/Resources/", null);
+            groupBoxCellState.Text = resourceManager.GetString("001");
+            groupBoxBalancingAlgorithm.Text = resourceManager.GetString("002");
+            label3.Text = resourceManager.GetString("003");
+            label5.Text = resourceManager.GetString("004");
+            myLabel3.Text = resourceManager.GetString("005");
+            myLabel9.Text = resourceManager.GetString("006");
+            myLabel10.Text = resourceManager.GetString("007");
+            label12.Text = resourceManager.GetString("008");
+            myLabel12.Text = resourceManager.GetString("009");
+            myLabel11.Text = resourceManager.GetString("010");
+            groupBox2.Text = resourceManager.GetString("011");
+            myLabel5.Text = resourceManager.GetString("012");
+            myLabel6.Text = resourceManager.GetString("013");
+            myLabel7.Text = resourceManager.GetString("014");
+            myLabel8.Text = resourceManager.GetString("015");
+            myLabel14.Text = resourceManager.GetString("016");
+            myLabel13.Text = resourceManager.GetString("017");
+            groupBox3.Text = resourceManager.GetString("018");
+            label16.Text = resourceManager.GetString("019");
+            label17.Text = resourceManager.GetString("020");
+            label9.Text = resourceManager.GetString("021");
+            label4.Text = resourceManager.GetString("022");
+            label18.Text = resourceManager.GetString("023");
+            groupBox4.Text = resourceManager.GetString("024");
+            groupBox1.Text = resourceManager.GetString("025");
+            label1.Text = resourceManager.GetString("026");
+            buttonClear.Text = resourceManager.GetString("027");
+            label10.Text = resourceManager.GetString("028");
+            label2.Text = resourceManager.GetString("029");
+            label6.Text = resourceManager.GetString("030");
+        }

@@ -1,0 +1,183 @@
+<?xml version="1.0" standalone="yes"?>
+<AppData xmlns="http://tempuri.org/AppData.xsd">
+  <Languages>
+    <ID>001</ID>
+    <English>Cell state</English>
+    <Russian>Состояние ячеек</Russian>
+    <German>Zellzustand</German>
+  </Languages>
+  <Languages>
+    <ID>002</ID>
+    <English>Balancing algorithm</English>
+    <Russian>Алгоритм балансировки</Russian>
+    <German>Ausgleichsalgorithmus</German>
+  </Languages>
+  <Languages>
+    <ID>003</ID>
+    <English>Automatic balancing</English>
+    <Russian>Автоматическая балансировка</Russian>
+    <German>Automatisches Auswuchten</German>
+  </Languages>
+  <Languages>
+    <ID>004</ID>
+    <English>Imbalance, mV</English>
+    <Russian>Дисбаланс, мВ</Russian>
+    <German>Ungleichgewicht, mV</German>
+  </Languages>
+  <Languages>
+    <ID>005</ID>
+    <English>Balancing</English>
+    <Russian>Балансировка</Russian>
+    <German>Ausgleich</German>
+  </Languages>
+  <Languages>
+    <ID>006</ID>
+    <English>Balancing curr.</English>
+    <Russian>Ток баланс.</Russian>
+    <German>Ausgleichsstrom</German>
+  </Languages>
+  <Languages>
+    <ID>007</ID>
+    <English>mA</English>
+    <Russian>мА</Russian>
+    <German>mA</German>
+  </Languages>
+  <Languages>
+    <ID>008</ID>
+    <English>Balancer resistance, Ohm</English>
+    <Russian>Сопротивление балансира, Ом</Russian>
+    <German>Ausgleichswiderstand, Ohm</German>
+  </Languages>
+  <Languages>
+    <ID>009</ID>
+    <English>Charge level,</English>
+    <Russian>Заряд,</Russian>
+    <German>Ladezustand,</German>
+  </Languages>
+  <Languages>
+    <ID>010</ID>
+    <English>mAh</English>
+    <Russian>мАч</Russian>
+    <German>mAh</German>
+  </Languages>
+  <Languages>
+    <ID>011</ID>
+    <English>Cell characteristics</English>
+    <Russian>Характеристики ячеек</Russian>
+    <German>Zelleigenschaften</German>
+  </Languages>
+  <Languages>
+    <ID>012</ID>
+    <English>Capacity,</English>
+    <Russian>Емкость,</Russian>
+    <German>Kapazität,</German>
+  </Languages>
+  <Languages>
+    <ID>013</ID>
+    <English>mAh</English>
+    <Russian>мАч</Russian>
+    <German>mAh</German>
+  </Languages>
+  <Languages>
+    <ID>014</ID>
+    <English>Leakage curr.,</English>
+    <Russian>Ток утечки,</Russian>
+    <German>Leckstrom,</German>
+  </Languages>
+  <Languages>
+    <ID>015</ID>
+    <English>uA</English>
+    <Russian>мкА</Russian>
+    <German>uA</German>
+  </Languages>
+  <Languages>
+    <ID>016</ID>
+    <English>Int. resistance,</English>
+    <Russian>Внутр. сопр.,</Russian>
+    <German>Inn. widerst.,</German>
+  </Languages>
+  <Languages>
+    <ID>017</ID>
+    <English>uOhm</English>
+    <Russian>мкОм</Russian>
+    <German>uOhm</German>
+  </Languages>
+  <Languages>
+    <ID>018</ID>
+    <English>Energy storage</English>
+    <Russian>Накопитель энергии</Russian>
+    <German>Energiespeicher</German>
+  </Languages>
+  <Languages>
+    <ID>019</ID>
+    <English>Maximum</English>
+    <Russian>Максимальная</Russian>
+    <German>Maximal</German>
+  </Languages>
+  <Languages>
+    <ID>020</ID>
+    <English>usable capacity, mAh</English>
+    <Russian>полезная емкость, мАч</Russian>
+    <German>nutzbare Kapazität, mAh</German>
+  </Languages>
+  <Languages>
+    <ID>021</ID>
+    <English>Discharge capacity, mAh</English>
+    <Russian>Разрядная емкость, мАч</Russian>
+    <German>Entladekapazität, mAh</German>
+  </Languages>
+  <Languages>
+    <ID>022</ID>
+    <English>Imbalance, mAh</English>
+    <Russian>Дисбаланс, мАч</Russian>
+    <German>Unwucht, mAh</German>
+  </Languages>
+  <Languages>
+    <ID>023</ID>
+    <English>Balancing progress</English>
+    <Russian>Прогресс балансировки</Russian>
+    <German>Fortschritt ausgleichen</German>
+  </Languages>
+  <Languages>
+    <ID>024</ID>
+    <English>Cell initial states</English>
+    <Russian>Исходные состояния ячеек</Russian>
+    <German>Ursprüngliche Zellzustände</German>
+  </Languages>
+  <Languages>
+    <ID>025</ID>
+    <English>Simulation</English>
+    <Russian>Моделирование</Russian>
+    <German>Simulation</German>
+  </Languages>
+  <Languages>
+    <ID>026</ID>
+    <English>Simulation speed</English>
+    <Russian>Скорость моделирования</Russian>
+    <German>Simulationsgeschwindigkeit</German>
+  </Languages>
+  <Languages>
+    <ID>027</ID>
+    <English>Clear the history</English>
+    <Russian>Очистить историю</Russian>
+    <German>Verlauf löschen</German>
+  </Languages>
+  <Languages>
+    <ID>028</ID>
+    <English>The number of cycles</English>
+    <Russian>Количество циклов</Russian>
+    <German>Anzahl der Zyklen</German>
+  </Languages>
+  <Languages>
+    <ID>029</ID>
+    <English>Charge/discharge curr., A</English>
+    <Russian>Ток заряда/разряда, А</Russian>
+    <German>Lade-/Entladestrom, A</German>
+  </Languages>
+  <Languages>
+    <ID>030</ID>
+    <English>Cell voltage, V</English>
+    <Russian>Напряжение ячеек, В</Russian>
+    <German>Zellspannung, V</German>
+  </Languages>
+</AppData>
